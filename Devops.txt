@@ -1,0 +1,21 @@
+Devops
+Jenkins
+-port - 8090
+- Jenkins jdk 17 or 21
+- cd C:\ProgramData\Jenkins\.jenkins\secrets
+- notepad initialAdminPassword
+username - admin
+password - admin@2025
+url -http://localhost:8090/
+
+
+SonarQube
+username -admin
+password - DevTeam@2025
+url - http://localhost:9000/
+
+token -sqp_b264cc1900720a6e22f14d317b0ba1ef6717be91
+
+mvn clean verify sonar:sonar -Dsonar.projectKey=testproject -Dsonar.projectName='testproject' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_b264cc1900720a6e22f14d317b0ba1ef6717be91
+
+https://github.com/vidhya12278/CarrerProjectSample/tree/master
